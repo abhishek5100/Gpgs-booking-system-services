@@ -4,9 +4,9 @@ const serverless = require('serverless-http');
 const cors = require('cors');
 
 // Route imports (make sure these exist and use Express.Router())
-const sheetRoutes = require('../routes/sheetRoutes');
-const propertiesSheetRoutes = require('../routes/propertiesSheetRoutes');
-const propertySheetRoutes = require('../routes/propertySheetRoutes');
+const sheetRoutes = require('./routes/sheetRoutes');
+const propertiesSheetRoutes = require('./routes/propertiesSheetRoutes');
+const propertySheetRoutes = require('./routes/propertySheetRoutes');
 
 const app = express();
 
