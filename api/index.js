@@ -4,9 +4,9 @@ const express = require('express');
 const serverless = require('serverless-http');
 const cors = require('cors');
 
-const sheetRoutes = require('./routes/sheetRoutes');
-const propertiesSheetRoutes = require('./routes/propertiesSheetRoutes');
-const propertySheetRoutes = require('./routes/propertySheetRoutes');
+const sheetRoutes = require('../routes/sheetRoutes');
+const propertiesSheetRoutes = require('../routes/propertiesSheetRoutes');
+const propertySheetRoutes = require('../routes/propertySheetRoutes');
 
 const app = express();
 
