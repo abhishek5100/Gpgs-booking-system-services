@@ -125,7 +125,7 @@ const fetchPropertySheetData = async (req, res) => {
           ACRoom: ACRoom || "",
           DA : DA || "",
           MFR : MFR || "",
-          URHD : new Date(URHD)  || "",
+          URHD : URHD  || "",
           URHA : URHA   || ""
         });
       }
