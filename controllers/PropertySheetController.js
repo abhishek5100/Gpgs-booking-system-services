@@ -117,7 +117,7 @@ const fetchPropertySheetData = async (req, res) => {
         ACRoom = sheet.getCell(i + 1, 40).value?.toString().trim();  // Column E
         MFR = sheet.getCell(i + 1, 20).value?.toString().trim();  // Column E
         DA = sheet.getCell(i + 1, 22).value?.toString().trim();  // Column E
-        URHD = sheet.getCell(i + 1, 32).value;  // Column E
+        URHD = sheet.getCell(i + 1, 32).toString().value;  // Column E
         URHA = sheet.getCell(i + 1, 33).value?.toString().trim(); 
         result.push({
           BedNo: bedNo || "",
@@ -140,3 +140,4 @@ const fetchPropertySheetData = async (req, res) => {
 module.exports = {
   fetchPropertySheetData,
 };
+
